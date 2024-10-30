@@ -110,3 +110,46 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+.sidebar {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #013c6d;
+    overflow-x: hidden;
+    display: none;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.show-sidebar{
+    display:block;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #0260ac;
+}
+
+.openbtn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+

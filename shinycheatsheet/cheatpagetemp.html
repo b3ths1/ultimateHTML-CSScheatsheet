@@ -6,11 +6,25 @@
 </head>
 <body>
     <div class="sticky">
-        <header>
+        <header>  
+        <button onclick="toggleSidebar()" class="openbtn">☰</button>
         <h1>CSS Templates</h1>
         <img style="height:60px" src="pngwing.com (3).png">
         <p>Your go-to guide for becoming a CSS master...surely</p>
     </header>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="cheatpage.html">HTML</a>
+        <a href="cheatpagecss.html">CSS</a>
+        <a href="cheatpagetemp.html">CSS-templates</a>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("mySidebar").classList.toggle("show-sidebar");
+        }
+    </script>
+
     <nav>
         <ul>
             <li><a href="cheatpage.html">HTML</a></li>

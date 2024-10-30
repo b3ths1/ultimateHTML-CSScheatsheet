@@ -6,10 +6,24 @@
 
 <body>
     <header>
+        <button onclick="toggleSidebar()" class="openbtn">☰</button>
         <h1>HTML Cheatsheet</h1>
         <img style=height:60px src="pngegg.png">
         <p>Your go-to guide for understanding HTML tags...probably</p>
     </header>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="cheatpage.html">HTML</a>
+        <a href="cheatpagecss.html">CSS</a>
+        <a href="cheatpagetemp.html">CSS-templates</a>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("mySidebar").classList.toggle("show-sidebar");
+        }
+    </script>
+    
     <nav>
         <ul>
             <li><a href="cheatpage.html">HTML</a></li>
